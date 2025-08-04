@@ -22,6 +22,6 @@ public class T02_Ex01 {
 		int sum = kor + com + math;
 		double avg = sum / 3.0;
 		System.out.println("총점 : " + sum);
-		System.out.println("평균 : " + avg);
+		System.out.printf("평균 : %.2f", avg);
 	}
 }
