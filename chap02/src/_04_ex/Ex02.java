@@ -18,7 +18,6 @@ public class Ex02 {
 		 */
 		Scanner scan = new Scanner(System.in);
 		
-		/*
 		System.out.print("이름을 입력하세요 : ");
 		String name = scan.next();
 		System.out.print("성별을 입력하세요(남/여) : ");
@@ -30,7 +29,7 @@ public class Ex02 {
 		
 		System.out.println("키 " + key + "cm인 " + age + "살 " + gender + "자 " + name + "님 반갑습니다^^");
 		System.out.printf("키 %.2fcm인 %d살 %s자 %s님 반갑습니다^^", key, age, gender, name);
-		*/
+		
 		/*
 		 2. 키보드로 정수 두 개를 입력 받아 두 수의 합, 차, 곱, 나누기한 몫을 출력하세요.
 
@@ -42,7 +41,7 @@ public class Ex02 {
 		   빼기 결과 : 16
 		   곱하기 결과 : 161
 		   나누기 몫 결과 : 3
-		 
+		 */
 		System.out.print("첫 번째 정수 : ");
 		int num1 = scan.nextInt();
 		System.out.print("두 번째 정수 : ");
@@ -52,7 +51,7 @@ public class Ex02 {
 		System.out.println("뺄셈 : " + (num1 - num2));
 		System.out.println("곱셈 : " + num1 * num2);
 		System.out.println("몫 : " + num1 / num2);
-		*/
+		
 		/*
 		 3. 키보드로 가로, 세로 값을 실수형으로 입력 받아 사각형의 면적과 둘레를 계산하여 출력하세요.
 		   계산 공식 ) 면적 : 가로 * 세로
@@ -64,7 +63,7 @@ public class Ex02 {
 		
 		   면적 : 562.95
 		   둘레 : 110.4
-		 
+		 */
 		
 		System.out.print("가로 : ");
 		double width = scan.nextDouble();
@@ -75,7 +74,7 @@ public class Ex02 {
 		double cir = (width + height) * 2;
 		System.out.println("면적 : " + area);
 		System.out.println("둘레 : " + cir);
-		*/
+		
 		
 		/*
 		 4. 영어 문자열 값을 키보드로 입력 받아 문자에서 앞에서 세 개를 출력하세요.
