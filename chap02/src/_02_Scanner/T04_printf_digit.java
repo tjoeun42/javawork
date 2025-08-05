@@ -21,5 +21,13 @@ public class T04_printf_digit {
 		System.out.printf("%6.2f\n", 123.45);
 		System.out.printf("%.3f", 38294.39283928383);
 	}
-
 }
+
+
+
+
+
+
+
+
+
