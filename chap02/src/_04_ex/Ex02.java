@@ -64,7 +64,7 @@ public class Ex02 {
 		
 		   면적 : 562.95
 		   둘레 : 110.4
-		 */
+		 
 		
 		System.out.print("가로 : ");
 		double width = scan.nextDouble();
@@ -72,15 +72,26 @@ public class Ex02 {
 		double height = scan.nextDouble();
 		
 		double area = width * height;
+		double cir = (width + height) * 2;
+		System.out.println("면적 : " + area);
+		System.out.println("둘레 : " + cir);
+		*/
 		
+		/*
+		 4. 영어 문자열 값을 키보드로 입력 받아 문자에서 앞에서 세 개를 출력하세요.
+
+		   ex.
+		   문자열을 입력하세요 : apple
 		
+		   첫 번째 문자 : a
+		   두 번째 문자 : p
+		   세 번째 문자 : p
+		 */
+		System.out.print("문자열 입력(영어만) : ");
+		String str = scan.next();
+		// char ch1 = str.charAt(0);
+		System.out.println("첫 번째 문자 : " + str.charAt(0));
+		System.out.println("두 번째 문자 : " + str.charAt(1));
+		System.out.println("세 번째 문자 : " + str.charAt(2));
 	}
-
 }
-
-
-
-
-
-
-
