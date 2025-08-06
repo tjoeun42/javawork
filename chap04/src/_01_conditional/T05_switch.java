@@ -1,5 +1,7 @@
 package _01_conditional;
 
+import java.util.Scanner;
+
 public class T05_switch {
 
 	public static void main(String[] args) {
@@ -62,19 +64,43 @@ public class T05_switch {
 		}
 		
 		// 문1) 사용자로부터 연산자(+,-,*,/,%)와 2숫자를 입력받아 연산한 결과 출력
+		Scanner scan = new Scanner(System.in);
 		
+		System.out.print("연산할 숫자와 연산자 입력 ex) 3 + 5 : ");
+		int num2 = scan.nextInt();
+		char op = scan.next().charAt(0);
+		int num3 = scan.nextInt();
 		
-
+		switch(op) {
+			case '+' :
+				System.out.println(num2 + "+" + num3 + "=" + (num2+num3));
+				break;
+			case '-' :
+				System.out.println(num2 + "-" + num3 + "=" + (num2-num3));
+				break;
+			case '*' :
+				System.out.println(num2 + "*" + num3 + "=" + num2*num3);
+				break;
+			case '/' :
+				// System.out.println(num2 + "/" + num3 + "=" + (double)num2/num3);
+				System.out.printf("%d/%d=%.2f", num2, num3, (double)num2/num3);
+				break;
+			case '%' :
+				System.out.println(num2 + "%" + num3 + "=" + num2%num3);
+				break;
+			default :
+				System.out.println("연산자를 잘못 입력하였습니다");
+		}
+		
+		if(op == '+')
+			System.out.println(num2 + " + " + num3 + " = " + (num2+num3));
+		else if(op == '-')
+			System.out.println(num2 + "-" + num3 + "=" + (num2-num3));
+		else if(op == '*')
+			System.out.println(num2 + "*" + num3 + "=" + num2*num3);
+		else if(op == '/')
+			System.out.println(num2 + "/" + num3 + "=" + (double)num2/num3);
+		else if(op == '%')
+			System.out.println(num2 + "%" + num3 + "=" + num2%num3);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
