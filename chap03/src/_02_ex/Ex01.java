@@ -134,5 +134,4 @@ public class Ex01 {
 		boolean result10 = num12 == num13 && num13 == num14;
 		System.out.println("세개의 숫자가 모두 같은가 ? " + result10);
 	}
-
 }
