@@ -40,6 +40,7 @@ public class T03_while {
 			if(count == 3)
 				break;
 		}
+		System.out.println("----------------");
 		
 		Scanner scan = new Scanner(System.in);
 		
@@ -53,10 +54,22 @@ public class T03_while {
 				break;
 		}
 		System.out.println("프로그램 종료");
+		System.out.println("----------------");
 		
 		// 사용자로부터 2개의 숫자를 입력받아 더한 숫자 출력
 		// 0을 입력하면 종료
-
+		
+		while(true) {
+			System.out.print("2개의 숫자 입력 : ");
+			int num1 = scan.nextInt();
+			int num2 = scan.nextInt();
+			
+			if(num1 == 0)
+				break;
+			
+			System.out.println(num1 + "+" + num2 + "=" + (num1+num2));
+		}
+		System.out.println("프로그램 종료");
 	}
 
 }
