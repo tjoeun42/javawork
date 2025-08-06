@@ -1,5 +1,7 @@
 package _02_repetitive;
 
+import java.util.Scanner;
+
 public class T03_while {
 
 	public static void main(String[] args) {
@@ -15,6 +17,7 @@ public class T03_while {
 			System.out.println(i);
 			i++;
 		}
+		System.out.println("----------------");
 		
 		int sum = 0;
 		i = 1;
@@ -23,13 +26,49 @@ public class T03_while {
 //			i++;
 //			
 //			sum = sum + i++;
+			
 			sum += i++;
 		}
 		System.out.println("합계 : " + sum);
+		System.out.println("----------------");
+		
+		// break : 반복문을 빠져나온다(for, while, do-while)
+		int count = 0;
+		while(true) {
+			System.out.println(++count);
+			
+			if(count == 3)
+				break;
+		}
+		
+		Scanner scan = new Scanner(System.in);
+		
+		while(true) {
+			System.out.print("1문자 입력(끝내려면 'q'입력) : ");
+			char ch = scan.next().charAt(0);
+			
+			System.out.println(ch);
+			
+			if(ch == 'q')
+				break;
+		}
+		System.out.println("프로그램 종료");
+		
+		// 사용자로부터 2개의 숫자를 입력받아 더한 숫자 출력
+		// 0을 입력하면 종료
 
 	}
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
