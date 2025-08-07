@@ -31,7 +31,7 @@ public class T02_etcArray {
 		System.out.println(Arrays.toString(bArr));
 		System.out.println(bArr);  // 주소
 		
-		// char은 값이 나옴
+		// char만 값이 나옴
 		System.out.println(chArr);
 
 	}
