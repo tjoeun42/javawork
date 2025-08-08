@@ -23,8 +23,14 @@ public class MainMethod {
 		
 		String name = obm1.print6(24, "더조은", "서울");
 		System.out.println(name);
+		
+		T02_apiOp op = new T02_apiOp();
+		System.out.println("3+5=" + op.add(3, 5));
+		System.out.println("8-5=" + op.minus(8, 5));
+		System.out.println("3*5=" + op.multiply(3, 5));
+		System.out.printf("5/3=%.2f\n", op.divide(5, 3));
+		System.out.println("5%3=" + op.remainder(5, 3));
 	}
-
 }
 
 
