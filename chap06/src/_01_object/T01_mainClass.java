@@ -21,6 +21,10 @@ public class T01_mainClass {
 		System.out.println("-------------------------------");
 		
 		T02_apiClass api1 = new T02_apiClass();
+		System.out.println("(1번째 객체) 나이 : " + api1.age);
+		
+		api1.address = "서울 서초구";
+		System.out.println("(1번째 객체) 주소 : " + api1.address);
 		
 	}
 
