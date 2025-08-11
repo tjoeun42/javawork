@@ -1,39 +1,31 @@
 package _06_constructor;
 
-class ConOver {
+class ThisConOver {
 	int num;
 	double dou;
 	String name;
 	
-	ConOver() {
+	ThisConOver() {
+		this(1, 1.0, "홍길동");
 		System.out.println("매개변수가 없는 생성자");
-		num = 1;
-		dou = 1.0;
-		name = "홍길동";
 	}
 	
-	ConOver(int num) {
+	ThisConOver(int num) {
+		this(num, 1.0, "홍길동");
 		System.out.println("매개변수가 1개(int)인 생성자");
-		this.num = num;
-		dou = 1.0;
-		name = "홍길동";
 	}
 	
-	ConOver(String name) {
+	ThisConOver(String name) {
+		this(1, 1.0, name);
 		System.out.println("매개변수가 1개(String)인 생성자");
-		num = 1;
-		dou = 1.0;
-		this.name = name;
 	}
 	
-	ConOver(int num, double dou) {
+	ThisConOver(int num, double dou) {
+		this(num, dou, "홍길동");
 		System.out.println("매개변수가 2개인 생성자");
-		this.num = num;
-		this.dou = dou;
-		name = "홍길동";
 	}
 	
-	ConOver(int num, double dou, String name) {
+	ThisConOver(int num, double dou, String name) {
 		System.out.println("매개변수가 3개인 생성자");
 		this.num = num;
 		this.dou = dou;
@@ -47,26 +39,26 @@ class ConOver {
 	}
 }
 
-public class ConOverloadingRun {
+public class ThisConOverloadingRun {
 
 	public static void main(String[] args) {
-		ConOver co = new ConOver();
+		ThisConOver co = new ThisConOver();
 		co.info();
 		System.out.println("----------------------");
 		
-		co = new ConOver(10);
+		co = new ThisConOver(10);
 		co.info();
 		System.out.println("----------------------");
 		
-		co = new ConOver("더조은");
+		co = new ThisConOver("더조은");
 		co.info();
 		System.out.println("----------------------");
 		
-		co = new ConOver(100, 3.14);
+		co = new ThisConOver(100, 3.14);
 		co.info();
 		System.out.println("----------------------");
 		
-		co = new ConOver(7, 1.23, "tjoeun");
+		co = new ThisConOver(7, 1.23, "tjoeun");
 		co.info();
 		System.out.println("----------------------");
 	}
