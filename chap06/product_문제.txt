@@ -1,4 +1,4 @@
-package :   _01_staticEx
+package :   _11_staticEx
 class     :   Product
 	     고유한 제품번호 
 	     제품의 갯수(객체가 생성된 갯수)
