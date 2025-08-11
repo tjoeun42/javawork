@@ -8,6 +8,9 @@ public class VarArg {
 		*/
 		method("a", "b", "c");
 		method("a", "b", "c", "d", "e", "f");
+		
+		String[] ar = {"a", "b", "c", "d", "e", "f"};
+		method(ar);
 	}
 	/*
 	void method(String s1) {
