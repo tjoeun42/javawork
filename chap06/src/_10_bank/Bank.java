@@ -3,18 +3,19 @@ package _10_bank;
 public class Bank {
 	private int balance;
 	
+	// 다른 패키지에서 사용하려면 접근제한자를 public으로
 	public void deposit(int money) {
 		balance += money;
 	}
 	
-	void withdraw(int money) {
+	public void withdraw(int money) {
 		if(balance < money)
 			System.out.println("잔고부족");
 		else
 			balance -= money;
 	}
 	
-	int getBalance() {
+	public int getBalance() {
 		return balance;
 	}
 }

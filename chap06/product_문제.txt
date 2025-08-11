@@ -3,9 +3,10 @@ class     :   Product
 	     고유한 제품번호 
 	     제품의 갯수(객체가 생성된 갯수)
 	     생성자(고유한 제품번호)
-	  Product_main
 
-Product p1 = new Product();  // 고유한 제품번호 (더조은1)
+class     :    Product_main
+
+Product p1 = new Product();  // 고유한 제품번호 (더조은1) => 고유한 제품번호는 객체가 생성되면 자동으로 들어가게
 Product p2 = new Product();   // 고유한 제품번호 (더조은2)
 Product p3 = new Product();   // 고유한 제품번호 (더조은3)
    출력문 : 생산된 총 제품의 갯수 : 3
