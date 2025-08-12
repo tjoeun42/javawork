@@ -2,8 +2,8 @@ api :
    Pet
      속성 : kind
             	color
-          feature  // 지랄견
-          생성자 : Pet(kind, color, feature) { }
+              feature  // 지랄견
+     생성자 : Pet(kind, color, feature) { }
      메소드 :
           sound()
           info() {출력문}    종류 : 비글, 색상 : 흰색
