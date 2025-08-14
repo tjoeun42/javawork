@@ -66,6 +66,7 @@ public class T07_cloneDeep {
 		System.out.println(str[0]);
 		System.out.println(copyStr[0]);
 		System.out.println("===============================");
+		System.out.println();
 		
 		// 1. 깊은 복사
 		String[] deepCopy = new String[5];
@@ -79,15 +80,49 @@ public class T07_cloneDeep {
 		str[0] = "a";
 		System.out.println("str : " + Arrays.toString(str));
 		System.out.println("deepCopy : " + Arrays.toString(deepCopy));
+		System.out.println("===============================");
+		System.out.println();
 		
+		// 2. Arrays.copyOf(원본배열, 복사할 길이)
+		String[] arrayCopy = Arrays.copyOf(str, str.length);
+		System.out.println("str : " + Arrays.toString(str));
+		System.out.println("arrayCopy : " + Arrays.toString(arrayCopy));
+		System.out.println("------------------------------");
+		
+		arrayCopy[2] = "z";
+		System.out.println("str : " + Arrays.toString(str));
+		System.out.println("arrayCopy : " + Arrays.toString(arrayCopy));
+		System.out.println("===============================");
+		System.out.println();
+		
+		// 3. clone()
+		Circle c1 = new Circle(new Point3(5, 10), 3);
+		Circle c2 = c1.clone();
+		
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println("------------------------------");
+		
+		c1.r = 100;
+		c1.p.x = 8;
+		System.out.println("c1 : " + c1);
+		System.out.println("c2 : " + c2);
+		System.out.println("------------------------------");
+		
+		Circle c3 = c1.deepClone();
+		c1.r = 50;
+		c1.p.x = 10000;
+		System.out.println("c1 : " + c1);
+		System.out.println("c3 : " + c3);
+		System.out.println("------------------------------");
+		
+		// 배열에서의 clone은 기본으로 되어 있음
+		int[] num = {1,2,3};
+		int[] numCopy = num.clone();
+		
+		numCopy[0] = 100;
+		
+		System.out.println(Arrays.toString(num));
+		System.out.println(Arrays.toString(numCopy));
 	}
 }
-
-
-
-
-
-
-
-
-
