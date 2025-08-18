@@ -18,7 +18,5 @@ public class T01_Wrapper {
 		System.out.println("size : " + Integer.SIZE + "bit");
 		System.out.println("Bytes : " + Integer.BYTES + "bytes");
 		System.out.println("type : " + Integer.TYPE);
-
 	}
-
 }
