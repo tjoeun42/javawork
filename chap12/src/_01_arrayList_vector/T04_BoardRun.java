@@ -22,6 +22,23 @@ public class T04_BoardRun {
 		System.out.println(board.getWriter());
 		
 		// 모든 객체를 하나씩 가져와서 출력하기
+		for(Board b : list) {
+			System.out.println(b.getTitle() + "\t" + b.getContent() + "\t" + b.getWriter());
+		}
+		System.out.println("------------------------------------------");
+		
+		for(int i=0; i<list.size(); i++) {
+			Board b = list.get(i);
+			System.out.println(b.getTitle() + "\t" + b.getContent() + "\t" + b.getWriter());
+		}
+		System.out.println("------------------------------------------");
+		
+		// 객체 삭제
+		list.remove(2);
+		list.remove(2);
+		for(Board b : list) {
+			System.out.println(b.getTitle() + "\t" + b.getContent() + "\t" + b.getWriter());
+		}
 	}
 
 }
