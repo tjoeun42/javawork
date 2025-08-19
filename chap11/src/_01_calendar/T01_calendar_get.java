@@ -61,11 +61,26 @@ public class T01_calendar_get {
 		오전이면 -> 시간 : AM 09시
 		오후이면 -> 시간 : PM 09시
 		*/
+		/*
+		if(ampm == 0) {
+			System.out.println("시간 : AM " + today.get(Calendar.HOUR));	
+		} else {
+			System.out.println("시간 : PM " + today.get(Calendar.HOUR));
+		}
+		*/
+		if(ampm == 0) {
+			System.out.print("시간 -> AM ");
+			if(today.get(Calendar.HOUR) < 10) {
+				System.out.print("0");
+			}
+		} else {
+			System.out.print("시간 -> PM ");
+			if(today.get(Calendar.HOUR) < 10) {
+				System.out.print("0");
+			}
+		}
+		System.out.println(today.get(Calendar.HOUR) 
+				+ ":" + today.get(Calendar.MINUTE)
+				+ ":" + today.get(Calendar.SECOND));
 	}
-
 }
-
-
-
-
-
