@@ -17,6 +17,11 @@ class Hash1 {
 	Hash1(String str) {
 		this.str = str;
 	}
+	
+	@Override
+	public String toString() {
+		return str;
+	}
 }
 
 public class T01_HashSet {
@@ -52,6 +57,15 @@ public class T01_HashSet {
 		iteratorPrint(set2.iterator());
 		
 		// "C" 삭제하고 출력하기
+		iterator = set2.iterator();
+		while(iterator.hasNext()) {
+			Hash1 h = iterator.next();
+			String st = h.str;
+			if(st.equals("C"))
+				iterator.remove();
+		}
+		System.out.print("C 삭제 후 : ");
+		iteratorPrint(set2.iterator());
 	}
 	
 	static void iteratorPrint(Iterator<Hash1> h) {
