@@ -1,4 +1,4 @@
-package _01_generice;
+package _01_nonGeneric;
 
 class Box {
 	private Object obj;
@@ -14,7 +14,7 @@ class Box {
 class Apple { }
 class Banana { }
 
-public class T01_nonGenerice {
+public class NonGeneric {
 	public static void main(String[] args) {
 		Box box = new Box();
 		box.setObj("더조은");
