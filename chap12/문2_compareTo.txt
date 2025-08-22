@@ -14,7 +14,7 @@ api class :
 		etter / getter 메소드
       오버라이딩 : 
         toString()
-		    제목 : title, 저자 : author, 출판사 : publisher
+		    제목 : title / 저자 : author / 범주 : category / 가격 : price
 		equals()
 		    가격이 같으면 true반환
 		    다르면 false반환 
