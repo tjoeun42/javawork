@@ -1,0 +1,32 @@
+- 스택(stack)
+  LIFO(후입선출) : 맨 위를 top, 맨 아래 bottom
+
+  push() : 맨 위에 요소 추가
+  pop() : 맨 위의 요소 삭제
+  peek() : 맨 위의 요소 반환(삭제 x)
+  search(Object) : 요소의 위치 반환(맨위가 1부터 시작, 못찾으면 -1반환)
+
+  >>  Stack<자료형> 변수명 = new Stack<>();
+
+
+- 큐(Queue)
+  FIFO(선입선출) : 맨앞은 Front, 맨뒤는 Rear 라고 함
+
+  add() : 큐의 맨 뒤에 요소 추가. 공간이 없으면 예외발생
+  offer() : 큐의 맨 뒤에 요소 추가. 공간이 없으면 false
+  remove() : 큐의 맨 앞 요소 삭제. 비어있으면 예외 발생
+  poll() : 큐의 맨 앞 요소 삭제. 비어있으면 null반환
+  element() : 큐의 맨 앞의 요소 반환(삭제x). 비어 있으면 예외발생
+  peek() : 큐의 맨 앞의 요소 반환(삭제x). 비어있으면 null반환
+
+  >>  Queue<자료형> 변수명 = new LinkedList<>();
+
+
+- 스택과 큐에 모두 사용하는 메서드
+  size()
+  isEmpty()
+
+
+
+
+
