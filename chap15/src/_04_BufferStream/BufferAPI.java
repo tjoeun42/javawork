@@ -65,9 +65,4 @@ public class BufferAPI {
 			e.printStackTrace();
 		} // 자원반납 구문을 안써도됨 자동으로 반납까지 해줌
 	}
-	
-	
 }
-
-
-
